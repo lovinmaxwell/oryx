@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include oryxerp *.css
+recursive-include oryxerp *.csv
+recursive-include oryxerp *.html
+recursive-include oryxerp *.ico
+recursive-include oryxerp *.js
+recursive-include oryxerp *.json
+recursive-include oryxerp *.md
+recursive-include oryxerp *.png
+recursive-include oryxerp *.py
+recursive-include oryxerp *.svg
+recursive-include oryxerp *.txt
+recursive-exclude oryxerp *.pyc
