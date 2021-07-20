@@ -8,7 +8,21 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "lovin@oryxerp.qa"
 app_license = "MIT"
+app_logo_url = '/assets/ecommerce/images/blogging.svg'
 
+website_context = {
+	"favicon": 	"/assets/ecommerce/images/cart.svg",
+	"splash_image": "/assets/ecommerce/images/cart.svg"
+}
+
+default_mail_footer = """
+	<span>
+		Sent via
+		<a class="text-muted" href="https://erpnext.com?source=via_email_footer" target="_blank">
+			OryxERP
+		</a>
+	</span>
+"""
 # Includes in <head>
 # ------------------
 
