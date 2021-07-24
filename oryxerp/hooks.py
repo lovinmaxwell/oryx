@@ -11,16 +11,13 @@ app_license = "MIT"
 app_logo_url = '/assets/oryxerp/images/blogging.svg'
 
 website_context = {
-	"favicon": 	"/assets/oryxerp/images/cart.svg",
-	"splash_image": "/assets/oryxerp/images/cart.svg"
+	"favicon": 	"/assets/oryxerp/images/blogging.svg",
+	"splash_image": "/assets/oryxerp/images/blogging.svg"
 }
 
 default_mail_footer = """
 	<span>
-		Sent via
-		<a class="text-muted" href="https://erpnext.com?source=via_email_footer" target="_blank">
-			OryxERP
-		</a>
+		From OryxERP
 	</span>
 """
 # Includes in <head>
