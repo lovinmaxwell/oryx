@@ -1,2 +1,2 @@
-execute:frappe.db.set_value('System Settings', None, 'app_name', 'OryxERP')
 oryxerp.patches.set_app_name
+execute:frappe.db.set_value('System Settings', None, 'app_name', 'OryxERP')
