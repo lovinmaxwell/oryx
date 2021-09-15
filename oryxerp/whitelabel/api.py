@@ -7,11 +7,14 @@ from frappe import _
 def whitelabel_patch():
 	#delete erpnext welcome page 
 	frappe.delete_doc_if_exists('Page', 'welcome-to-erpnext', force=1)
+	whitelabel = frappe.get_single('Whitelabel Setting')
+	if whitelabel.whitelabel_app_name:
+		frappe.db.set_value("System Settings","System Settings","app_name",whitelabel.whitelabel_app_name)
 	#update Welcome Blog Post
 	if frappe.db.exists("Blog Post", "Welcome"):
 		frappe.db.set_value("Blog Post","Welcome","content","")
 	update_field_label()
-	if cint(get_frappe_version()) >= 13 and not frappe.db.get_single_value('Whitelabel Setting', 'ignore_onboard_whitelabel'):
+	if cint(get_frappe_version()) >= 13 and not whitelabel.ignore_onboard_whitelabel:
 		update_onboard_details()
 
 
