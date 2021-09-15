@@ -26,11 +26,12 @@ default_mail_footer = """
 # include js, css files in header of desk.html
 # app_include_css = "/assets/oryxerp/css/oryxerp.css"
 # app_include_js = "/assets/oryxerp/js/oryxerp.js"
-
+app_include_css = "/assets/oryxerp/css/whitelabel_app.css"
+app_include_js = "/assets/oryxerp/js/oryxerp.bundle.js"
 # include js, css files in header of web template
 # web_include_css = "/assets/oryxerp/css/oryxerp.css"
 # web_include_js = "/assets/oryxerp/js/oryxerp.js"
-
+web_include_css = "/assets/oryxerp/css/whitelabel_web.css"
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "oryxerp/public/scss/website"
 
@@ -138,6 +139,10 @@ default_mail_footer = """
 # 	],
 # }
 
+boot_session = "oryxerp.whitelabel.api.boot_session"
+
+after_migrate = ['oryxerp.whitelabel.api.whitelabel_patch']
+
 # Testing
 # -------
 
@@ -156,6 +161,10 @@ default_mail_footer = """
 # override_doctype_dashboards = {
 # 	"Task": "oryxerp.task.get_dashboard_data"
 # }
+
+override_whitelisted_methods = {
+	"frappe.utils.change_log.show_update_popup": "oryxerp.whitelabel.api.ignore_update_popup"
+}
 
 # exempt linked doctypes from being automatically cancelled
 #
