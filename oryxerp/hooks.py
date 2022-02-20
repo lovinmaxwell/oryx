@@ -2,7 +2,7 @@ from . import __version__ as app_version
 
 app_name = "oryxerp"
 app_title = "OryxERP"
-app_publisher = "Oryx"
+app_publisher = "Oryx Solutions"
 app_description = "Open Source ERP "
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
