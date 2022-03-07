@@ -26,8 +26,9 @@ def get_frappe_version():
 	return frappe.db.get_value("Installed Application",{"app_name":"frappe"},"app_version").split('.')[0]
 
 def update_onboard_details():
-	update_onboard_module()
-	update_onborad_steps()
+	# update_onboard_module()
+	# update_onborad_steps()
+	pass
 
 def update_onboard_module():
 	onboard_module_details = frappe.get_all("Module Onboarding",filters={},fields=["name"])
