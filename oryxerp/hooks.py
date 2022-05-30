@@ -9,7 +9,7 @@ app_color = "grey"
 app_email = "lovin@oryxerp.qa"
 app_license = "MIT"
 app_logo_url = '/assets/oryxerp/images/blogging.svg'
-app_4tb_logo_url = '/assets/oryxerp/images/blogging.svg'
+app_4tb_logo_url = '/assets/oryxerp/images/4tb.png'
 
 website_context = {
 	"favicon": 	"/assets/oryxerp/images/blogging.svg",
